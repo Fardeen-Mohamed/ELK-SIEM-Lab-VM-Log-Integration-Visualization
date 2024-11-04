@@ -1,4 +1,4 @@
-# ELK Stack Lab: VM Log Integration, Visualization, and Alerting
+# ELK SIEM Lab: VM Log Integration, Visualization, and Alerting
 
 This project demonstrates how to set up an **Elastic Stack (ELK) lab** to monitor logs from virtual machines (VMs), create visualizations, build a dashboard, and set up alerts for system monitoring.
 
@@ -6,7 +6,7 @@ This project demonstrates how to set up an **Elastic Stack (ELK) lab** to monito
 
 - **Objective**: Use Elastic Stack to collect logs from VMs, visualize data in custom dashboards, and configure alerts for important events.
 - **Tools Used**: Elasticsearch, Kibana, Elastic Agent, Linux VM
-- **Description**: Logs from a Linux VM are sent to Elasticsearch with Elastic Agent. Kibana is then used to create visualizations, a dashboard, and alerts to monitor key system metrics and events.
+- **Description**: Logs from a Linux VM are sent to Elasticsearch with Elastic Agent. Kibana is then used to create visualization, a dashboard, and alerts to monitor key system metrics and events.
 
 ## Steps to Set Up
 
@@ -20,17 +20,10 @@ This project demonstrates how to set up an **Elastic Stack (ELK) lab** to monito
 2. Configure Elastic Agent to send system logs directly to Elasticsearch.
 3. Confirm logs are being indexed by checking **Kibana > Discover**.
 
-### Step 3: Create Visualizations in Kibana
-1. **Go to Kibana > Discover** to view the incoming log data from the VM.
-2. **Create Visualizations**:
-   - Use fields like CPU usage, memory usage, and log events.
-   - Save visualizations for use in a dashboard.
-
-### Step 4: Build a Dashboard
+### Step 3: Build a Dashboard
 1. **Create a New Dashboard** in Kibana.
    - Add your saved visualizations to display system activity.
 2. **Customize the Layout** for easy viewing of important metrics.
 
-### Step 5: Set Up Alerts
+### Step 4: Set Up Alerts
 1. **Configure Alerts** in Kibana to notify when specific conditions are met, like high CPU usage or repeated errors.
-2. **Add Connectors** (optional) to receive notifications via email, Slack, or other services.
